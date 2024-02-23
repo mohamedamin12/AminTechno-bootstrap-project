@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;700;900;1000&family=Montserrat:wght@400;700&display=swap');
+    :root{
+        --navbar-color : #fff;
+        --cyan-color:#0dcaf0;
+        --dark-color: #191f2b;
+    }
+/* Start Navbar  */
+
+.navbar{
+    background-color : var(--navbar-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--cyan-color);
+}
+.search{
+    border-left: solid 1px var(--cyan-color);
+}
+.search svg{
+   color: var(--cyan-color);
+}
+.navbar .navbar-toggler{
+    border: 1px solid var(--dark-color);
+    color: var(--dark-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--cyan-color);
+}
+/* End Navbar  */
+/* Start Listgroup */
+.container .list-group .active{
+    background-color: var(--cyan-color);
+    color: var(--dark-color);
+    border: none;
+}
+.container .list-group li:hover{
+    cursor: pointer;
+    background-color: var(--cyan-color);
+}
+/* End Listgroup */
